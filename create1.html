@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--font awesome-->
+        <script src="https://kit.fontawesome.com/648421cce7.js" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="adminstyle.css">
+        <title>Admin Section - Add Posts</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>Company</span>Name</h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chats.html">Chats</a></li>
+                <li><a href="posts.html">My Posts</a></li>
+                <!--<li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>-->
+                <li class="username"><a href="#">
+                    <i class="fa-regular fa-circle-user" style="width: 1.2em;"></i>
+                    Username
+                    <i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="Login.html" class="logout">Log Out
+                        <i class="fa-solid fa-key" style="color: red;"></i>
+                    </a></li>
+                </ul></li>
+            </ul>
+        </header>
+
+        <div class="admin-wrapper">
+            <div class="left-sidebar">
+                <ul>
+                    <li><a href="posts.html">Manage Posts</a></li>
+                    <li><a href="create1.html">Add Posts</a></li>
+                </ul>
+            </div>
+            <div class="admin-content">
+                <div class="content">
+                    <h2 class="page-title">Add Posts</h2>
+                    <form action="create1.html" method="post">
+                        <div class="upload">
+                            <img src="trolley.png">
+                            <button type="button" class="btn btn-big">
+                                <i class="fa fa-upload"></i>Upload Picture
+                            </button>
+                        </div>
+                        <div>
+                            <label>Title</label>
+                            <input type="text" name="title" class="text-input">
+                            <label>Description</label>
+                            <input type="text" name="desc" class="text-input">
+                            <label class="price">Price</label>
+                            <input type="text" name="price" class="text-input price"><p class="dollar-sign">$</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <Script src="scripts.js"></Script>
+    </body>
+</html>

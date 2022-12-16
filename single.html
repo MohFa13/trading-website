@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--font awesome-->
+        <script src="https://kit.fontawesome.com/648421cce7.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style1.css" />
+        <script src="response.js" defer></script>
+        <script src="app.js" defer></script>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Listing</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>Company</span>Name</h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chats.html">Chats</a></li>
+                <li><a href="posts.html">My Posts</a></li>
+                <!--<li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>-->
+                <li class="username"><a href="#">
+                    <i class="fa-regular fa-circle-user" style="width: 1.2em;"></i>
+                    Username
+                    <i class="fa-solid fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="Login.html" class="logout">Log Out
+                        <i class="fa-solid fa-key" style="color: red;"></i>
+                    </a></li>
+                </ul></li>
+            </ul>
+        </header>
+        <div class="page-wrapper">
+            <div class="post-slider">
+                <h1 class="slider-title">Listing Title</h1>
+                <div class="description">
+                    <h2 class="item-title">Item Description</h2>
+                    <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="seller description">
+                        <img src="trolley.png">
+                        <i class="fa fa-user"><span class="seller-des">username</span></i>
+                        <i class="fa fa-phone"><span class="seller-des">+1 123-456-7890</span></i>
+                    </div>
+                    <div class="btn seller" id="chat">
+                            Chat with Seller
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-left prev1"></i>
+                <i class="fa-solid fa-angle-right next1"></i>
+                <div class="single-wrapper">
+                    <div class="post"><img src="https://www.pngkey.com/png/detail/253-2530713_electronics-buyer-mesa-all-types-of-electronics.png" alt="Electronics Buyer Mesa - All Types Of Electronics@pngkey.com" class="slider-image"></div>
+                    <div class="post"><img src="https://www.pngkey.com/png/detail/66-669650_rupam-furniture-furniture-images-png.png" alt="Rupam Furniture - Furniture Images Png@pngkey.com" class="slider-image"></div>
+                    <div class="post"><img src="https://www.pngkey.com/png/detail/20-200505_branded-luxurious-watches-collection-full-hd-watch-png.png" alt="Branded Luxurious Watches Collection - Full Hd Watch Png@pngkey.com" class="slider-image"></div>
+                    <div class="post"><img src="https://www.pngkey.com/png/detail/3-30791_photoshop-texture-gps-tracker-for-car-search-black.png" alt="Photoshop, Texture, Gps Tracker For Car, Search, Black - Car Png@pngkey.com" class="slider-image"></div>
+                    <div class="post"><img src="https://www.pngkey.com/png/detail/217-2177448_the-australian-government-is-offering-loans-of-up.png" alt="The Australian Government Is Offering Loans Of Up To - Crescent Tool Box Set@pngkey.com" class="slider-image"></div>
+                </div>
+            </div>
+            <div class="content right">
+                <div class="sidebar">
+                    <div class="section popular">
+                        <h2 class="section-title">View other listings</h2>
+                        <div class="post clearfix">
+                            <img src="trolley.png">
+                            <a href="#">Listing titles</a>
+                        </div>
+                        <div class="post clearfix">
+                            <img src="trolley.png">
+                            <a href="#">Listing titles</a>
+                        </div>
+                        <div class="post clearfix">
+                            <img src="trolley.png">
+                            <a href="#">Listing titles</a>
+                        </div>
+                        <div class="post clearfix">
+                            <img src="trolley.png">
+                            <a href="#">Listing titles</a>
+                        </div>
+                        <div class="post clearfix">
+                            <img src="trolley.png">
+                            <a href="#">Listing titles</a>
+                        </div>
+                    </div>
+                    <div class="btn check"><a href="#">Check more</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>Company</span>Name</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i>&nbsp;+1 123-456-7890</span>
+                        <span><i class="fas fa-envelope"></i>&nbsp;info@thebuisnessname.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <!--chat box-->
+                <div class="container" id="chatbox">
+                    <div class="chat-header">
+                      <div class="logo">
+                        <img src="trolley.png" alt="cwt" />
+                      </div>
+                      <div class="title">Username</div>
+                      <i class="fa-solid fa-xmark" id="chat-x"></i>
+                    </div>
+                    <div class="chat-body"></div>
+                    <div class="chat-input">
+                      <div class="input-sec">
+                        <input type="text" id="txtInput" placeholder="Type here" autofocus />
+                      </div>
+                      <div class="send">
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </div>
+                    </div>
+                  </div>
+                <!--chat box-->
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                        <a href="#"><li>Events</li></a>
+                        <a href="#"><li>Team</li></a>
+                        <a href="#"><li>Gallery</li></a>
+                        <a href="#"><li>Terms and Conditions</li></a>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact us</h2>
+                    <br>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Enter your Email address">
+                        <textarea name="message" rows="4" class="text-input contact-input" placeholder="Type your message"></textarea>
+                        <button type="submit" class="btn btn-big">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; the company name.com | Designed by Mohammad Farhat
+            </div>
+        </div>
+
+        <!-- JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <Script src="scripts.js"></Script>
+    </body>
+</html>
